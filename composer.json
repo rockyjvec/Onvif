@@ -1,0 +1,23 @@
+{
+    "name": "rockyjvec/onvif",
+    "description": "Onvif IP camera library.",
+    "keywords": ["soap", "onvif", "camera"],
+    "type": "library",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-soap": ">=5.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rocky Cardwell",
+            "email": "github@thecardwells.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rockyjvec\\": "src/Rockyjvec/"
+        }
+    },
+    "minimum-stability": "dev"
+}
