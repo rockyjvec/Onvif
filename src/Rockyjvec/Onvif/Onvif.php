@@ -1,4 +1,6 @@
-<?php namespace App\Onvif;
+<?php namespace Rockyjvec\Onvif;
+
+use Rockyjvec\Onvif\Service\Device;
 
 class Onvif
 {
@@ -50,7 +52,7 @@ class Onvif
         {
             if(isset($capabilities->$name))
             {
-                $class = "App\\Onvif\\" . $name;
+                $class = "Rockyjvec\\Onvif\\Service\\" . $name;
                 $this->$var = new $class($capabilities->$name->XAddr, $username, $password);
             }
         }
@@ -61,7 +63,7 @@ class Onvif
             {
                 if(isset($capabilities->Extension->$name))
                 {
-                    $class = "App\\Onvif\\Extension\\" . $name;
+                    $class = "Rockyjvec\\Onvif\\Onvif\\Extension\\" . $name;
                     $this->$var = new $class($capabilities->Extension->$name->XAddr, $username, $password);
                 }
             }

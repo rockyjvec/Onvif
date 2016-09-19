@@ -1,4 +1,4 @@
-<?php namespace App\Onvif;
+<?php namespace Rockyjvec\Onvif\Soap;
 
 class WsseAuthHeader extends \SoapHeader {
 

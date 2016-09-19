@@ -1,6 +1,6 @@
-<?php namespace App\Onvif\Extension;
+<?php namespace Rockyjvec\Onvif\Service\Extension;
 
-use App\Onvif\SoapClient;
+use Rockyjvec\Onvif\Soap\SoapClient;
 
 class DeviceIO extends SoapClient
 {

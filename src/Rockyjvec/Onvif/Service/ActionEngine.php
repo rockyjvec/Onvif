@@ -1,6 +1,8 @@
-<?php namespace App\Onvif;
+<?php namespace Rockyjvec\Onvif\Service;
 
-class ActionEngine extends \SoapClient
+use Rockyjvec\Onvif\Soap\SoapClient;
+
+class ActionEngine extends SoapClient
 {
     protected $api_uri = 'http://www.onvif.org/ver10/actionengine/wsdl';
 }

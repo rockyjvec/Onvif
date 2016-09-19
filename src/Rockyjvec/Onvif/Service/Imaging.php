@@ -1,4 +1,6 @@
-<?php namespace App\Onvif;
+<?php namespace Rockyjvec\Onvif\Service;
+
+use Rockyjvec\Onvif\Soap\SoapClient;
 
 class Imaging extends SoapClient
 {
