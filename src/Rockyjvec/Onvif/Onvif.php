@@ -63,7 +63,7 @@ class Onvif
             {
                 if(isset($capabilities->Extension->$name))
                 {
-                    $class = "Rockyjvec\\Onvif\\Onvif\\Extension\\" . $name;
+                    $class = "Rockyjvec\\Onvif\\Service\\Extension\\" . $name;
                     $this->$var = new $class($capabilities->Extension->$name->XAddr, $username, $password);
                 }
             }
