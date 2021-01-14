@@ -1,10 +1,10 @@
-#Onvif IP Camera library for PHP
+# Onvif IP Camera library for PHP
 
 This library will be the basis of a Network Video Recorder (NVR) application I am writing in Laravel.  It provides a php interface to Onvif compatible cameras.  I have only tested it with the RLC-410.
 
 It supports subscribing to motion events.
 
-##Installation
+## Installation
 
 Pull in the package through Composer.
 
