@@ -13,8 +13,13 @@ Run:
 
 ##Usage
 
-Device discovery will be added later.  For now, you need to specify the endpoint, username, and password of the camera you want to connect to.
+Device discovery:  
+```
+$r = Onvif::Discovery();
+print_r($r);
+```
 
+You need to specify the endpoint, username, and password of the camera you want to connect to.
 Here is the basic code to get the capabilities of the camera:
 ```
 $o = new Rockyjvec\Onvif\Onvif("http://camera.hostname:8000/onvif/device_service", "username", "password");
